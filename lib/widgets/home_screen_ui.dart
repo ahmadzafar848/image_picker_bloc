@@ -58,7 +58,7 @@ class HomeScreenUI extends StatelessWidget {
             width: width * 0.8,
             color: Colors.blue,
             child: Center(
-              child: Text('Send'),
+              child: Text('Send Data'),
             ),
           ),
         )
