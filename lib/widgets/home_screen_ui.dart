@@ -10,6 +10,7 @@ class HomeScreenUI extends StatelessWidget {
   HomeScreenUI({Key? key, this.imagePath, this.file}) : super(key: key);
   String? imagePath;
   XFile? file;
+
   @override
   Widget build(BuildContext context) {
     ImagePickerBloc bloc = Provider.of(context, listen: false);
@@ -50,6 +51,7 @@ class HomeScreenUI extends StatelessWidget {
             if (file == null) {
               print('empty');
             } else {
+              File(file!.path);
               print('ll');
             }
           },
